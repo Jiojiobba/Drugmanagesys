@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>药品信息管理系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      maximum-scale=1">
+    <link rel="stylesheet" href="http://106.12.3.28:10006/layui/css/layui.css" maximun-scale="1">
+    <link rel="stylesheet" href="http://106.12.3.28:10006/css/main.css">
+    <link rel="stylesheet" href="http://106.12.3.28:10006/css/public.css">
+
+</head>
+
+<body class="layui-layout-body">
+
+    <!-- 页面区域 -->
+    <div class="layui-layout layui-layout-admin">
+
+        <!--左侧菜单栏-->
+
+        <ul class="layui-nav layui-nav-tree  layui-nav-side layui-my-menu " lay-filter="demo">
+            <li class="layui-my-name" id="uuusername" style="cursor: default;"></li>
+            <li class="layui-my-logo">
+                <!-- <p id="big">药品信息管理系统</p> -->
+            </li>
+            <p id="big">药品信息管理系统</p>
+
+            <li class="layui-nav-item layui-nav-myli ">
+                <a href="http://106.12.3.28:10006/drugManage.html" target="mainiframe">
+                    <use class="icon-typeMng"></use>药品管理</a>
+                <dl class="layui-nav-child abc">
+                    <!-- <dd class="menu-dd"><a id="roomManage" class="tab-active" href="./Cnone.html" target="mainiframe">客户跟进</a></dd> -->
+                </dl>
+            </li>
+
+            <li class="layui-nav-item layui-nav-myli">
+                <a href="http://106.12.3.28:10006/moreMenu.html" target="mainiframe">
+                    <use class="icon-moremenuMng"></use>“更多”菜单</a>
+                <dl class="layui-nav-child abc"></dl>
+            </li>
+
+            <li class="layui-nav-item layui-nav-myli">
+                <a href="http://106.12.3.28:10006/operationDiary.html" target="mainiframe">
+                    <use class="icon-oderMng"></use>操作日志</a>
+                <dl class="layui-nav-child abc"></dl>
+            </li>
+            <li class="layui-nav-item layui-nav-myli">
+                <a href="http://106.12.3.28:10006/userManage.html" target="mainiframe">
+                    <use class="icon-userMng"></use>用户管理</a>
+                <dl class="layui-nav-child abc"></dl>
+            </li>
+            <li class="layui-nav-item layui-nav-myli">
+                <a href="http://106.12.3.28:10006/liuyan.html" target="mainiframe">
+                    <use class="icon-liuMng"></use>查看留言</a>
+                <dl class="layui-nav-child abc"></dl>
+            </li>
+            <!--菜单下侧：退出系统，修改密码-->
+            <ul class="nav-footer">
+                <div class="menu-footer-two" style="margin-left: 40px;">
+                    <li id="logout">
+                        <a href="http://106.12.3.28:10006/login.html" class="tab-active">
+                            <use class="logOut"></use>&nbsp;&nbsp;退出系统</a>
+                    </li>
+                </div>
+            </ul>
+        </ul>
+
+
+
+    </div>
+
+
+    <!--右侧页面内容-->
+    <div class="" style="width: 100%;">
+        <iframe class="" scrolling="yes" style="padding-left:200px;width: 100%;height: 100vh;" name="mainiframe" src="./drugManage.html" id="mainiframe" frameborder="0" scrolling="no">
+    </iframe>
+
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="http://106.12.3.28:10006/layui/layui.js"></script>
+    <script type="text/javascript" src="http://106.12.3.28:10006/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://106.12.3.28:10006/layui/layui.all.js"></script>
+    <!-- <script type="text/javascript" src="js/util.js"></script> -->
+    <script src="http://106.12.3.28:10006/js/main.js"></script>
+
+
+
+</body>
+
+</html>

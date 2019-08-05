@@ -1,0 +1,108 @@
+.background-index-image {
+    background: url("http://106.12.3.28:10006/images/user-bac22.jpg") no-repeat 0 0;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+button {
+    background-color: #23262E !important;
+}
+
+.myButton {
+    height: 35px !important;
+    padding: 0 25px !important;
+    border-radius: 20px !important;
+    line-height: 35px !important;
+}
+
+.input-in {
+    width: 150px;
+    height: 35px;
+    display: inline;
+    border: 1px solid #0f1114;
+}
+
+.input-in:hover {
+    border-color: rgba(0, 0, 0, 0.86) !important;
+    box-shadow: 0px 0px 4px 1px #2c2c2c69;
+}
+
+.input-in:active,
+.input-in:focus {
+    border-color: rgba(0, 0, 0, 0.86) !important;
+}
+
+.input-out {
+    width: 250px;
+    height: 50px;
+    display: inline;
+}
+
+label {
+    white-space: pre;
+}
+
+.toolbar {
+    vertical-align: center;
+}
+
+
+/*类型表格分页*/
+
+.layui-laypage-em,
+.layui-laypage-btn {
+    background: #23262E !important;
+    color: whitesmoke !important;
+    height: 28px !important;
+}
+
+
+/*.layui-laypage-em, .layui-laypage-btn{*/
+
+
+/*background-color: #670D07 !important;*/
+
+
+/*}*/
+
+.layui-table {
+    color: #333;
+}
+
+.layui-table-page .layui-laypage button {
+    color: whitesmoke !important;
+}
+
+.layui-table-page select:hover,
+.layui-table-page select:active,
+.layui-table-page select:focus,
+.layui-table-page select:visited,
+.layui-table-page select:focus-within {
+    border-color: #23262E !important;
+    border-width: 1px;
+}
+
+i>.layui-icon :hover {
+    background-color: #23262E !important;
+}
+
+.layui-laypage a:hover {
+    color: #23262E !important;
+}
+
+.layui-table-page>div {
+    cursor: default;
+}
+
+.layui-btn-danger {
+    background: rgba(168, 0, 3, 0.92) !important;
+}
+
+option {
+    border-color: black !important;
+}

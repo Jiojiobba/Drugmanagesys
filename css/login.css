@@ -1,0 +1,185 @@
+.login-box2 {
+    height: 400px;
+    width: 500px;
+    position: relative;
+    background: rgba(245, 245, 245, 0.77);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 120px;
+    box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.58);
+    /*box-shadow: 10px 10px 10px rgba(245, 245, 245, 0.17);*/
+    border: 2px black solid;
+    text-align: center;
+    color: black;
+}
+
+.login-inputcontent-box {
+    height: 170px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    /*color: whitesmoke;*/
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.title-user,
+.title-user-son {
+    padding-top: 45px;
+    font-size: 55px;
+    color: black;
+}
+
+.title-user-son {
+    font-size: 20px;
+    padding-top: 0px;
+}
+
+.login-input {
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline;
+    border: none;
+}
+
+.login-input-size {
+    padding-right: 150px;
+}
+
+.login-input-inline {
+    width: 500px;
+    height: 80px;
+    display: flex;
+}
+
+.login-input-inline>div {
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    padding-left: 50px;
+}
+
+.login-input-inline>input {
+    padding-left: 10px;
+    /*border: 1px black solid;*/
+}
+
+.login-input-inline>input:hover {
+    padding-left: 10px;
+    border: 2px black solid;
+}
+
+.twoButton {
+    margin: 0 auto;
+}
+
+#login_botton,
+#register_botton {
+    width: 170px;
+    height: 50px;
+}
+
+#login_botton {
+    margin-right: 20px;
+    background-color: rgb(31, 34, 34);
+    color: whitesmoke;
+    border: 2px rgb(15, 16, 16);
+}
+
+#register_botton {
+    margin-left: 20px;
+    color: whitesmoke;
+    border: 2px whitesmoke;
+}
+
+
+/*图标*/
+
+#account_icon {
+    background: url("http://106.12.3.28:10006/images/icon_loginaccount2-32.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+    right: 55px;
+}
+
+#password_icon {
+    background: url("http://106.12.3.28:10006/images/icon_loginpwd-32.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+    right: 55px;
+}
+
+
+/*模态框样式*/
+
+.register-motaikuang {
+    background: #141414;
+    color: whitesmoke;
+    flex-direction: column;
+    display: none;
+}
+
+.register-title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    height: 50px;
+    padding-top: 20px;
+}
+
+.register-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.register-line {
+    margin: 0 auto;
+    width: 500px;
+    height: 75px;
+    display: inline-flex;
+}
+
+.register-line>div {
+    width: 105px;
+    text-align: right;
+    line-height: 75px;
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+.register-line>input {
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.register-btntwo {
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.register-btn {
+    color: whitesmoke;
+    background: black !important;
+    width: 150px;
+    border-radius: 10px;
+    height: 50px;
+    margin: 0 55px 0 55px;
+    border: none;
+}

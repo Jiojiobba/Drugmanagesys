@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>药品信息管理系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      maximum-scale=1">
+    <link rel="stylesheet" href="http://106.12.3.28:10006/layui/css/layui.css" maximun-scale="1">
+    <link rel="stylesheet" href="http://106.12.3.28:10006/css/drugManage.css">
+    <link rel="stylesheet" href="http://106.12.3.28:10006/css/public.css">
+</head>
+
+<body>
+
+    <!--表示是最大的盒子-->
+    <div class="main-box">
+        <p class="title-department">药品管理</p>
+        <div class="line">
+
+            <!--新建部门-->
+            <input class="layui-input" id="search_input" name="searchinput" style="width: 200px; margin-right: 10px;">
+            <button class="myButton layui-btn" id="research_drug" style="width: 125px; margin-right: 10px;">搜索</button>
+            <button class="layui-btn myButton" id="add_drug" style="width: 125px;">新增药品</button>
+
+        </div>
+
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+            <legend>药品信息表</legend>
+        </fieldset>
+
+        <div class="table-content">
+            <table class="layui-hide" id="drug_table" lay-filter="drug-table"></table>
+            <div id="fenpage"></div>
+        </div>
+
+
+    </div>
+
+
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-xs toolbar" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs toolbar" lay-event="del">删除</a>
+    </script>
+    <script type="text/javascript" src="http://106.12.3.28:10006/layui/layui.js"></script>
+    <script type="text/javascript" src="http://106.12.3.28:10006/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://106.12.3.28:10006/layui/layui.all.js"></script>
+    <!-- <script type="text/javascript" src="js/util.js"></script> -->
+    <script src="http://106.12.3.28:10006/js/drugManage.js"></script>
+
+</body>
+<!--编辑员工信息-->
+<div class="layer_notice" id="chachong" style="display: none;">
+    <div class="layui-row edit_box">
+        <div class="input-out-mtk-edit">药品名称：<input id="yaopinname" name="yaopinname" placeholder="必填项" class="layui-input input-in"></div>
+        <div class="input-out-mtk-edit">商品名称：<input id="shangpinname" name="shangpinname" placeholder="必填项" class="layui-input input-in"></div>
+        <div class="input-out-mtk-edit">
+            <button id="drug_add" class="layui-btn myButton">确认添加</button>
+        </div>
+    </div>
+</div>
+
+</html>

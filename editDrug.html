@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>药品信息管理系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      maximum-scale=1">
+    <link rel="stylesheet" href="http://106.12.3.28:10006/layui/css/layui.css" maximun-scale="1">
+    <link rel="stylesheet" href="http://106.12.3.28:10006/css/addDrug.css">
+    <link rel="stylesheet" href="http://106.12.3.28:10006/css/public.css">
+</head>
+
+<body class="layui-layout-body" style="overflow: scroll; width: 80%;">
+    <p class="title-adduser">修改药品信息</p>
+
+    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">药品信息</li>
+            <li>视频音频</li>
+            <li>更多</li>
+            <li>图片上传</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <div class="main-box">
+
+                    <div class="input-out-adduser layui-form-item " style="height:50px; "><label>药品名称:       </label>
+                        <input id="drugname" readonly="readonly" name="mingcheng" class="input-in" style="padding-right:2px;padding-left:2px;width: 250px;" placeholder="药品名称内容"></input>
+                    </div>
+                    <div class="input-out-adduser layui-form-item " style="height:50px; "><label>商品名称:       </label>
+                        <input id="shangpinname" readonly="readonly" name="shangpinname" class="input-in" style="padding-right:2px;padding-left:2px;width: 250px;" placeholder="商品名称内容"></input>
+                    </div>
+                    <!-- <div class="input-out-adduser layui-form-item " style="height:50px; "><label>商品名:          </label>
+                            <input id="shangpinname" name="shangpinname" class="input-in" style="padding-right:2px;padding-left:2px;width: 250px;" placeholder="商品名"></input>
+                        </div> -->
+                    <div class="input-out-adduser layui-form-item kuang2">
+                        <div class="kuang2-title">药品规格: </div>
+                        <textarea name="guige" class="layui-input input-in-text input-in " placeholder="药品规格内容"></textarea></div>
+                    <div class="input-out-adduser layui-form-item kuang2">
+                        <div class="kuang2-title">适应症: </div>
+                        <textarea name="shiying" class="layui-input input-in-text input-in " placeholder="适应症内容"></textarea></div>
+                    <div class="input-out-adduser layui-form-item kuang2">
+                        <div class="kuang2-title">不良反应: </div>
+                        <textarea name="buliang" class="layui-input input-in-text input-in " placeholder="不良反应内容"></textarea></div>
+                    <div class="input-out-adduser layui-form-item kuang2">
+                        <div class="kuang2-title">禁忌症: </div>
+                        <textarea name="jinji" class="layui-input input-in-text input-in " placeholder="禁忌症内容"></textarea></div>
+                    <div class="input-out-adduser layui-form-item kuang2">
+                        <div class="kuang2-title">注意事项: </div>
+                        <textarea name="zhuyi" class="layui-input input-in-text input-in " placeholder="注意事项内容"></textarea></div>
+                    <div class="input-out-adduser layui-form-item kuang2">
+                        <div class="kuang2-title">贮藏方式: </div>
+                        <textarea name="zhucang" class="layui-input input-in-text input-in " placeholder="贮藏方式内容"></textarea></div>
+                    <!-- <div class="input-out-adduser layui-form-item kuang2">
+                            <div class="kuang2-title">生产企业: </div>
+                            <textarea name="qiye" class="layui-input input-in-text input-in " placeholder="生产企业内容"></textarea></div> -->
+
+                    <div class="input-out-adduser layui-form-item kuang2" style="display: flex;">
+                        <div class="kuang2-title">用法用量: </div>
+                        <textarea name="yongfa" class="layui-input input-in-text input-in " placeholder="用法用量内容"></textarea>
+
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button id="yesone" onclick="yessave()" class=" layui-btn">保存</button>
+                        <button id="cancelone" onclick="canceljump()" class=" layui-btn" style="margin-left: 50px;">返回</button>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <div class="" style="display: flex;flex-direction: column; width: 550px;">
+                    <div>
+                        <p>音频:</p>
+                        <form id="uploadFormA" enctype="multipart/form-data">
+                            <input id="file" type="file" name="audio" />
+                        </form>
+                        <div style="display: flex; flex-direction: row; width: 300px;">
+                            <div id="uploadaudio">修改音频</div>
+                            <div id="deleteaudio">删除原有音频</div>
+                        </div>
+
+                        <audio id="audioold" class="playsounce" src="" autoplay="autoplay" controls='controls' style=" height:30px"></audio>
+
+                    </div>
+
+                    <div>
+                        <p>视频：</p>
+                        <form id="uploadFormV" enctype="multipart/form-data">
+                            <input id="filev" type="file" name="video" />
+                        </form>
+                        <div style="display: flex; flex-direction: row;">
+                            <div id="uploadvideo">修改视频</div>
+                            <div id="deletevedio">删除原有视频</div>
+                        </div>
+                        <div class="vvdieo">
+                            <video src="" id="vedioold" type="video/mp4" width="500" height="300" controls autoplay loop playsinline>
+                             <!-- <source src="cg.mp4" type="video/mp4" />     -->
+                            </video>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="layui-tab-item">
+                <div class="main-box" id="main_box_3">
+                    <div class="btn-box" id="submitall">
+                        <!-- <button id="addDrug_yes" class="myButton layui-btn">确认</button>
+                                    <button id="addDrug_cancel" class="myButton layui-btn" style="margin-left: 50px;">取消</button> -->
+                    </div>
+
+                    <!-- <div style="display: flex;justify-content: center;">
+                        <button id="addDrug_yes" class=" layui-btn">确认修改</button>
+                        <button id="addDrug_cancel" class=" layui-btn" style="margin-left: 50px;">取消</button>
+                    </div> -->
+                    <div style="display: flex;justify-content: center;">
+                        <button id="yesthree" onclick="yessave()" class=" layui-btn">保存</button>
+                        <button id="cancelthree" onclick="canceljump()" class=" layui-btn" style="margin-left: 50px;">返回</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="layui-tab-item">
+
+                <div class="picture">
+                    <form id="uploadFormpic" enctype="multipart/form-data">
+                        <input id="filepic" class="filepath" onchange="changepic(this)" type="file" name="picture" /><br>
+                    </form>
+                    <span id="img_span"> </span>
+                    <div id="uploadppic" style="width: 140px;margin:0 auto;position: absolute;left: 290px; top: 550px;">修改图片</div>
+                    <div id="cancelfour" onclick="canceljump()" style="width: 120px;margin:0 auto;position: absolute;left: 520px; top: 550px;">返回</div>
+
+
+                </div>
+                <!-- <div style="display: flex;justify-content: center;margin-top:15px;">
+                    <button id="yesfour" onclick="yessave()" class=" layui-btn">保存</button>
+                    <button id="cancelfour" onclick="canceljump()" class=" layui-btn" style="margin-left: 50px;">返回</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="http://106.12.3.28:10006/layui/layui.js"></script>
+    <script type="text/javascript" src="http://106.12.3.28:10006/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://106.12.3.28:10006/layui/layui.all.js"></script>
+    <script src="http://106.12.3.28:10006/js/editDrug.js"></script>
+
+</body>
+
+
+
+</html>

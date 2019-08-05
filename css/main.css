@@ -1,0 +1,156 @@
+    .layui-my-logo {
+        color: whitesmoke;
+        text-align: center;
+        width: 200px;
+        height: 40px;
+        font-size: 20px !important;
+        padding-top: 20px;
+        letter-spacing: 1px;
+        cursor: default;
+    }
+    
+    .layui-my-name {
+        color: whitesmoke;
+        text-align: center;
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        padding-top: 5px;
+        letter-spacing: 1px;
+    }
+    
+    .layui-my-menu {
+        background-color: #23262E;
+        text-align: center;
+    }
+    /*图标插入*/
+    
+    .icon-typeMng {
+        background: url(http://106.12.3.28:10006/images/icon_typemanage_two_16.svg) no-repeat;
+        /*fill: rgba(203, 203, 204, 0.98);*/
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 50px;
+        top: 15px;
+    }
+    
+    .icon-userMng {
+        background: url(http://106.12.3.28:10006/images/icon_usermanage3_two_16.svg) no-repeat;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 50px;
+        top: 15px;
+    }
+    
+    .icon-oderMng {
+        background: url(http://106.12.3.28:10006/images/icon_oder_two_16.svg) no-repeat;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 50px;
+        top: 15px;
+    }
+    
+    .icon-moremenuMng {
+        background: url(http://106.12.3.28:10006/images/icon_menu_two_16.svg) no-repeat;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 50px;
+        top: 15px;
+    }
+    
+    .icon-liuMng {
+        background: url(http://106.12.3.28:10006/images/icon_liuyan_two_16.svg) no-repeat;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 50px;
+        top: 15px;
+    }
+    /*隐藏菜单箭头*/
+    
+    a>span {
+        border-style: hidden !important;
+    }
+    
+    li>a {
+        font-size: 14px!important;
+    }
+    
+    dd>a {
+        font-size: 12px!important;
+    }
+    
+    .layui-nav-bar {
+        transition-duration: 0 !important;
+        background-color: #23262E !important;
+    }
+    
+    .layui-nav-myli a:hover {
+        background-color: #23262E !important;
+        color: white;
+    }
+    
+    .menu-dd a {
+        background-color: #23262E !important;
+    }
+    
+    .menu-dd a:hover {
+        background-color: #0f1114 !important;
+        color: white;
+    }
+    
+    .menu-dd a:active {
+        background-color: #0f1114 !important;
+        color: white;
+    }
+    
+    .nav-footer {
+        position: fixed;
+        bottom: 20px;
+        color: rgba(255, 255, 255, .7);
+    }
+    
+    .menu-footer-two {
+        display: flex;
+    }
+    
+    #resetpwd,
+    #logout {
+        width: 100px !important;
+        margin-top: 15px;
+    }
+    
+    #resetpwd a,
+    #logout a {
+        color: rgba(255, 255, 255, 0.7) !important;
+        font-size: 14px;
+    }
+    
+    .editPwd {
+        background: url(http://106.12.3.28:10006/images/icon_editpass.svg) no-repeat;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 6px;
+        bottom: -3px;
+    }
+    
+    .logOut {
+        background: url(http://106.12.3.28:10006/images/icon_logout.svg) no-repeat;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 75px;
+        bottom: -3px;
+    }
+    
+    #big {
+        font-size: 14px!important;
+        cursor: default;
+        margin-top: -15px;
+        margin-bottom: 20px;
+    }

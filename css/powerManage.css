@@ -1,0 +1,52 @@
+.main-box {
+    width: 70%;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.title-user {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* .line-two{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+} */
+
+.table-content {
+    width: 100%;
+    margin-top: 5px;
+    /*background-color: #c5c251;*/
+    height: 370px;
+}
+
+.input-out-adduser {
+    width: 650px;
+    height: 40px;
+    display: inline;
+}
+
+.layui-form-item {
+    margin-bottom: 0px !important;
+}
+
+.layui-input-block {
+    display: inline;
+    margin-left: 0 !important;
+}
+
+.layui-field-title {
+    margin: 0px !important;
+}

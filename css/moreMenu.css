@@ -1,0 +1,45 @@
+.main-box {
+    width: 70%;
+    height: 100%;
+    margin: 20px;
+}
+
+.title-user {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    margin-top: 20px;
+}
+
+.table-content {
+    width: 100%;
+    margin-top: 5px;
+    /*background-color: #c5c251;*/
+    height: 500px;
+}
+
+.input-out-mtk-edit {
+    margin: 20px auto;
+    width: 250px;
+    text-align: center;
+}
+
+.edit_box {
+    margin-top: 30px;
+}
+
+.moremenuson {
+    font-size: 16px;
+    border: 1px solid grey;
+    padding: 5px;
+    height: 25px;
+    width: 250px;
+    margin: 2px;
+    cursor: default;
+}
